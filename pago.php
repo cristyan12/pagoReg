@@ -14,7 +14,10 @@ class Pago
     /** @var int */
     private $numeroAños;
 
-    public function __construct(float $monto, float $tasaInteres, float $pagoAnual, int $numeroAños)
+    public function __construct(
+        float $monto, float $tasaInteres,
+        float $pagoAnual, int $numeroAños
+    )
     {
         $this->monto = $monto;
         $this->tasaInteres = $tasaInteres;
