@@ -2,7 +2,7 @@ def fib(n):
 	""" Print a Fibonacci series up to n."""
 	a, b = 0, 1
 	while a < n:
-		print(a, end=' ')
+		print(a, end='-')
 		a, b = b, a+b
 	print()
 
@@ -22,7 +22,20 @@ def primos():
 		else:
 			print(n, 'es número primo')
 
-print("Fibonacci")
+def fib2(n):
+	""" Retorna una lista conteniendo la serie Fibonacci desde n"""
+	result = []
+	a, b = 0, 1
+	while a < n:
+		result.append(a)
+		a, b = b, a+b
+	return result
+
+print("Fibonacci 2")
+f = fib2(100)
+print(f)
+
+print("\nFibonacci")
 fib(2000)
 
 print("\nPares")
