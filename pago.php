@@ -2,23 +2,17 @@
 
 class Pago
 {
-    /** @var float */
-    private $monto;
-
-    /** @var float */
-    private $tasaInteres;
-
-    /** @var float */
-    private $pagoAnual;
-
-    /** @var int */
-    private $numeroAños;
+    private float $monto;
+    private float $tasaInteres;
+    private float $pagoAnual;
+    private int $numeroAños;
 
     public function __construct(
-        float $monto, float $tasaInteres,
-        float $pagoAnual, int $numeroAños
-    )
-    {
+        float $monto,
+        float $tasaInteres,
+        float $pagoAnual,
+        int $numeroAños
+    ) {
         $this->monto = $monto;
         $this->tasaInteres = $tasaInteres;
         $this->pagoAnual = $pagoAnual;
